@@ -1,0 +1,23 @@
+<h5 class="text-center mt-5"> Result</h5>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.firstName }}</td>
+        <td>{{ emp.lastName }}</td>
+        <td>{{ emp.address }}</td>
+        <td>{{ emp.phone }}</td>
+        <td>{{ emp.position }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

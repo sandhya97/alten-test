@@ -1,0 +1,19 @@
+<h3 class="text-center mt-5"> Search Panel</h3>
+<div class="container form-border ">
+  <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstname" formControlName="firstName" aria-describedby="Firstname"
+        placeholder="Enter First Name">
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" class="form-control" id="lastname" formControlName="lastName" placeholder="Enter Last Name">
+    </div>
+    <div class="form-group">
+      <label for="position">Position</label>
+      <input type="text" class="form-control" formControlName="position" id="position" placeholder="Enter Position">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
